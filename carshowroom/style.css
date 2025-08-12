@@ -1,0 +1,647 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 1500px; /* Ensure at least 1500px height */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: #262626;
+    white-space: normal; /* Allow wrapping */
+    z-index: -50;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    min-height: 1500px; /* Ensure container is tall */
+}
+
+
+
+
+
+.banner {
+    position: relative;
+    height: 700px; /* Increase height from bottom */
+    width: 100%;
+    top: -150px;
+    background-image: url("images/man.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    z-index: -5;
+}
+
+
+
+
+.heading {
+    width: 100%;
+    height: 10vh; /* Responsive height */
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.brand {
+    color: white;
+    position: relative;
+    top: 10px;
+}
+
+.brand h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.brand h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.announcement {
+    color: white;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.know-more {
+    padding: 8px 16px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.know-more:hover {
+    background-color: white;
+    color: black;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+.icons img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-image: url("images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#Ourmodel {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    top: -80px;
+    font-size: 50px;
+    
+}
+
+.underline {
+    height: 2px;
+    width: 300px;
+    background-color: white;
+    margin: 5px auto; /* Center underline */
+    position: relative;
+    top: -80px;
+}
+
+.cars {
+    display: flex;
+    flex-wrap: wrap;  /* Wraps to the next row if needed */
+    justify-content: center;  /* Centers items horizontally */
+    gap: 20px;  /* Space between boxes */
+    padding: 20px;
+    max-width: 100%;
+}
+
+.cars {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1400px; /* Adjust to fit 3 items per row */
+    margin: 0 auto; 
+}
+
+.sportscar {
+    width: 400px; /* Adjust to match the image */
+    height: 300px; /* Adjust to match the image */
+    background-color: #ffffff1a;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sportscar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.car-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-title::after {
+    content: ">";
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-card {
+    background-color: #222;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.service-card h2 {
+    font-size: 20px;
+    margin: 15px 0;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.service-card button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.service-card button:hover {
+    background: #fff;
+    color: #222;
+}
+#btn{
+    position: relative;
+    bottom: -10px;
+}
+#btn2{
+    position: relative;
+    bottom: -25px;
+}
+#btn3{
+    position: relative;
+    bottom: -45px;
+}
+
+body {
+    background-color: #181818;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.shopping-tools {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 50px;
+    border: 1px solid #fff;
+    margin: 0 auto 20px;
+}
+
+.tools-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   
+}
+
+.tool-box {
+    background: #f2f2f2;
+    padding: 40px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    
+}
+
+.tool-box i {
+    font-size: 40px;
+    color: #555;
+    margin-bottom: 10px;
+    
+}
+
+.tool-box p {
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tool-box:hover {
+    background: #ddd;
+    transform: scale(1.05);
+}
+.footer {
+    background: #121212;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    width: 20%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 20px;
+    color: #bbb;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.social-icons {
+    font-size: 30px;
+}
+
+.social-icons i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    text-align: center;
+}
+
+.modal-content input, .modal-content textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.close {
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+
+#showFormBtn{
+    position: relative;
+   top: 10px;
+}
+/* Overlay Background */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Popup Box */
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Form Styling */
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-content label {
+    margin-top: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.popup-content input,
+.popup-content textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background: #0056b3;
+}
+/* #Book{
+    position: relative;
+    top: -230px;
+    left: 260px;
+    color: black;
+    
+    z-index: 35;
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+/* Overlay Background */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Popup Box */
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    width: 400px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Form Styling */
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-content label {
+    margin-top: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.popup-content input,
+.popup-content select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.popup-content button:hover {
+    background: #0056b3;
+}
+
+/* new  */
+
+
+
+/* Hide form by default */
+.hidden {
+    display: none;
+}
+
+/* Show form when needed */
+.show {
+    display: flex;
+}
+
+/* Popup Background */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Popup Box */
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* .im{
+    position: relative;
+    top: 10px;
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    z-index: 99999;
+    background-image: url("images/b.png");
+} */
+
+.im{
+    position: relative;
+    top: -2930px;
+    left: 150px;
+    height: 70px;
+    width: 70px;
+    background-image: url(images/b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    z-index: 99999;
+    
+}
